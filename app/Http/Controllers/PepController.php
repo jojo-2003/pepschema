@@ -12,7 +12,7 @@ class PepController extends Controller
      */
     public function index()
     {
-        $players = Player::with('admin')->get();
+        $players = Player::with('admin')->paginate(5);
         return view('users.index', compact('players'));
     }
 
@@ -32,7 +32,6 @@ class PepController extends Controller
         $validatedData = $request->validate([
             'player_name' => 'required',
             'username' => 'required',
-            'player_email' => 'required|email|unique:players',
             'player_password' => 'required',
             'student_id_number' => 'required',
         ]);

@@ -25,9 +25,6 @@
         <label for="username">Username:</label>
         <input type="text" name="username" id="username"><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" name="player_email" id="player_email"><br><br>
-
         <label for="password">Password:</label>
         <input type="text" name="player_password" id="player_password"><br><br>
 

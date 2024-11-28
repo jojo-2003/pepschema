@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('player_name');
             $table->string('username');
-            $table->string('player_email')->unique();
             $table->string('player_password');
             $table->string('student_id_number');
             $table->timestamps();

@@ -2,7 +2,10 @@
 
 namespace Database\Factories;
 
+use App\Models\Admin;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
+
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\admin>
@@ -14,6 +17,7 @@ class AdminFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    protected $model = Admin::class;
     public function definition(): array
     {
         return [

@@ -15,7 +15,6 @@
             <th>id</th>
             <th>Name</th>
             <th>Username</th>
-            <th>Email</th>
             <th>Password</th>
             <th>Student ID Number</th>
         </tr>
@@ -24,12 +23,11 @@
                 <td>{{ $player->id }}</td>
                 <td>{{ $player->player_name }}</td>
                 <td>{{ $player->username }}</td>
-                <td>{{ $player->player_email }}</td>
                 <td>{{ $player->player_password }}</td>
                 <td>{{ $player->student_id_number }}</td>
         @endforeach
         </tr>
     </table>
-    {{-- {!! $player->links() !!} --}}
+    {!! $players ->links() !!}
 </body>
 </html>

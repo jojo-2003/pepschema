@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -13,4 +14,6 @@ class Admin extends Model
     public function admin(): HasOne {
         return $this->hasOne(Player::class);
     }
+
+    use HasFactory;
 }
